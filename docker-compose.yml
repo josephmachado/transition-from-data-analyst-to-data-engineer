@@ -1,0 +1,14 @@
+services:
+  sde-workshop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sde-workshop
+    container_name: sde-workshop
+    user: "${UID}:${GID}"
+    ports:
+      - "8888:8888"   # Jupyter Lab
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/.venv
+

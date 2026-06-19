@@ -1,0 +1,4 @@
+%load_ext sql 
+%load_ext jupyter_ai_magic_commands
+%config SqlMagic.style = 'DEFAULT'
+%config SqlMagic.autopandas = True
